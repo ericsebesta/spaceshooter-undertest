@@ -12,7 +12,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: 6d153478a505961aa22ac009842f32a71b254211
+    secure: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   file:
     - ./Build/SpaceShooter-undertest-win.zip
     - ./Build/SpaceShooter-undertest-lin.zip
