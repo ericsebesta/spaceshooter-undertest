@@ -1,4 +1,5 @@
 ![master-travis](https://travis-ci.org/ericsebesta/spaceshooter-undertest.svg)
+[![Coverage Status](https://coveralls.io/repos/ericsebesta/spaceshooter-undertest/badge.svg)](https://coveralls.io/r/ericsebesta/spaceshooter-undertest)
 
 #SpaceShooter Tutorial - Under Test 
 #(THIS IS A WORK IN PROGRESS)
