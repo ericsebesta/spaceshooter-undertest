@@ -12,7 +12,7 @@ script:
 deploy:
   provider: releases
   api_key:
-    secure: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    secure: aK1CNPmtRGzRDay1O7zARqcgDgDgUU2/bXZM6zWKMV0xKZ72o85ek/NCT/CqB3pYConBcgeR0h+v8/hMIJZd738Z2VfDLYj9UIDytfl3zHfd5Lo5oTohxXvWhm0OPH1p0xqtpEMM9CX9EsRtlYYyYM82rAMZTKpxOewZFZ/UdQ8yzeS4CupqMOi0AzvRgKr1lVeRWOyTkMGIQa+5ruyuqHBl4vtjFlx9RO2Cz6UY/Zd98YFYAmijoXQeCz9zt2Q3B65OFF6wEZLjuLSsL3YftU7TqVvIVc518sEtJYHqCtMpZk9/RgXc2D097sNLKO69lmqYPH/0UCmeBZkaroWgaLozmolDkfDbiSsJQeg+3ZuTq+Oc0CEwB4ed3DBH5QU/mo0mBxe60UYi55G2t3tvmMp2uM7HE87XcvAdgW3R5rQH59TvSoz25Ak5GrVAMS3zNC6nEurHs7D7nBBszlaItEPcX6Vj92kvpzpQPDrEaxNIxNy9l85tQ8wbMOtKmKVb/SR/uH3b1VBFwtYV5Ri0qz97Mrnwz/uHv6zleX2wJFKu6Sumjw9FGiY+twiCLnM4JczkEfK2Hz4DE8Acsi7AawkymM6jPWr4SgYqgOhpZaOl9h2EJyVLXuTCCoDKNuvfWviRRC+vGYDCOTpwuJn0Db9eokzPEo3AIEZX7uXtz6w=
   file:
     - ./Build/SpaceShooter-undertest-win.zip
     - ./Build/SpaceShooter-undertest-lin.zip
