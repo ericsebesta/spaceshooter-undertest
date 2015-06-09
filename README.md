@@ -1,3 +1,5 @@
+![master-travis](https://travis-ci.org/ericsebesta/spaceshooter-undertest.svg)
+
 #SpaceShooter Tutorial - Under Test
 
 ![header image](http://unity3d.com/sites/default/files/space-shooter-header_0.jpg)
