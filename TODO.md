@@ -1,11 +1,14 @@
 
 Current TODO list:
 
+1. Move build scripts from travis-scripts into scripts-osx/travis
 1. get Travis-CI to succeed if only if app builds and all tests pass
 2. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
 3. Move integration tests over from other project, get Travis-CI to run and only succeed if integration test passes
 4. Generalize travis-CI build scripts for reuse
 5. Add many more unit and integration tests
+5. Make travis only build if something changes that "matters" (i.e. definitely don't build if only .md changes)
+6. Make travis only zip files if we want to deploy it
 6. Fix issues with original project (collision doesn't kill player)
 
 Errors that I encountered and dealt with:
