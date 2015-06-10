@@ -10,6 +10,7 @@ Current TODO list:
 
 Errors that I encountered and dealt with:
 - typo in 1.5.2 test tools
+  - fix [here](https://github.com/ericsebesta/spaceshooter-undertest/commit/c47ed92ce20fe7cbb8f8840fee1a7cbce1120f78)
 - "using" for NUnit and Substitute
 - had to put tests under "Editor"
 - build failed for some reason, but "play mode worked"
