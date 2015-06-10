@@ -12,5 +12,6 @@ Errors that I encountered and dealt with:
 - typo in 1.5.2 test tools
   - fix [here](https://github.com/ericsebesta/spaceshooter-undertest/commit/c47ed92ce20fe7cbb8f8840fee1a7cbce1120f78)
 - "using" for NUnit and Substitute
+  - example [here](https://github.com/ericsebesta/spaceshooter-undertest/commit/a93beea208cd7c170550ce061c8499d86a409987/Assets/Scripts/Editor/Test/DestroyByContactTest.cs)
 - had to put tests under "Editor"
 - build failed for some reason, but "play mode worked"
