@@ -2,12 +2,26 @@ language: objective-c
 osx_image: xcode61
 rvm:
 - 2.1.2
-
 before_install:
 - chmod +x ./travis-scripts/install.sh
 - chmod +x ./travis-scripts/build.sh
- 
 install:
 - ./travis-scripts/install.sh
 script:
 - ./travis-scripts/build.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: 6d153478a505961aa22ac009842f32a71b254211
+  file:
+    - ./Build/SpaceShooter-undertest-win.zip
+    - ./Build/SpaceShooter-undertest-lin.zip
+    - ./Build/SpaceShooter-undertest-osx.zip
+  on:
+    tags: true
+    all_branches: true
+  skip_cleanup: yes
+notifications:
+  email:
+    on_success: change
+    on_failure: always
