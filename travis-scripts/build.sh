@@ -1,9 +1,6 @@
 #! /bin/sh
- 
-# Example build script for Unity3D project. See the entire example: https://github.com/JonathanPorta/ci-build
- 
-# Change this the name of your project. This will be the name of the final executables as well.
-project="spaceshooter-undertest"
+
+project="SpaceShooter-undertest"
  
 echo "Attempting to build $project for Windows"
 /Applications/Unity/Unity.app/Contents/MacOS/Unity \
@@ -11,8 +8,8 @@ echo "Attempting to build $project for Windows"
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildWindowsPlayer "$(pwd)/Build/windows/$project.exe" \
+  -projectPath "$(pwd)" \
+  -buildWindowsPlayer "$(pwd)/Build/$project-win/$project.exe" \
   -quit
  
 echo "Attempting to build $project for OS X"
@@ -21,8 +18,8 @@ echo "Attempting to build $project for OS X"
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildOSXUniversalPlayer "$(pwd)/Build/osx/$project.app" \
+  -projectPath "$(pwd)" \
+  -buildOSXUniversalPlayer "$(pwd)/Build/$project-osx/$project.app" \
   -quit
  
 echo "Attempting to build $project for Linux"
@@ -31,9 +28,36 @@ echo "Attempting to build $project for Linux"
   -nographics \
   -silent-crashes \
   -logFile $(pwd)/unity.log \
-  -projectPath $(pwd) \
-  -buildLinuxUniversalPlayer "$(pwd)/Build/linux/$project.exe" \
+  -projectPath "$(pwd)" \
+  -buildLinuxUniversalPlayer "$(pwd)/Build/$project-lin/$project" \
   -quit
  
 echo 'Logs from build'
 cat $(pwd)/unity.log
+
+echo 'Packing the build files to zip files'
+
+echo 'Generating README and VERSION files...'
+cp README.md Build/$project-win/README.md
+cp README.md Build/$project-lin/README.md
+cp README.md Build/$project-osx/README.md
+git describe --long > Build/$project-win/VERSION.txt
+git describe --long > Build/$project-lin/VERSION.txt
+git describe --long > Build/$project-osx/VERSION.txt
+
+cd Build
+
+echo 'Removing debug files...'
+rm ./$project-win/*.pdb
+
+echo 'Packing Windows build...'
+zip -r $project-win.zip ./$project-win
+
+echo 'Packing Linux build...'
+zip -r $project-lin.zip ./$project-lin
+
+echo 'Packing OS X build...'
+zip -r $project-osx.zip ./$project-osx
+
+cd ..
+echo 'Zip files should be ready to deploy.'
