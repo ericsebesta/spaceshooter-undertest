@@ -18,6 +18,7 @@ Errors that I encountered and dealt with:
   - capture what error shows up if you don't
 
 Steps to set up unit testing:
+
 1. Import UnityTestTools from the Asset Store (all but Examples folder, you don't need that data)
 2. Make sure dll files get added to version control (if using git)
 2. Fix-up issue in 1.5.2 (hopefully fixed in newer build)
