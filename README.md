@@ -14,12 +14,14 @@ This was developed using Unity 5.0.2 and UnityTestTools 1.5.2 (freely available 
 I'm also using build scripts to automatically build the project using Travis-CI. My scripts are based on those found [here](https://jonathan.porta.codes/2015/04/17/automatically-build-your-unity3d-project-in-the-cloud-using-travisci-for-free/). Another project on GitHub is working down a similar path, consult it [here](https://github.com/MrSimbax/pong-x).
 
 #What does this project do?
-The goal of this project is to serve as an example of how one can set up git/github/unity/travis-ci to create a good unit-test-centric Unity-based game development process. Only free tools are needed, and while there are some hiccups that might cause newer programmers to stumble, I'm making this project visible in the open will help more people embrace a test-based development environment. Unity has done a great job integrating industry-standard, modern C# testing tools, and they are well-worth embracing.
+The goal of this project is to serve as an example of how one can set up git/github/unity/travis-ci to create a good unit-test-centric Unity-based game development process. Only free tools are needed, and while there are some hiccups that might cause newer programmers to stumble, I'm hoping that by making this project visible more people will embrace a test-based development environment. Unity has done a great job integrating industry-standard, modern C# testing tools, and they are well-worth embracing.
 
 #How can i test/build this project?
-Install Unity 5.0.2 (windows or mac should be fine).
-Download this project from github (many other websites can help you with that).
-The UnityTestTools are unable in-editor under the UnityTestTools menu bar, where you can see all of the unit and integration tests available.
+
+1. Install Unity 5.0.2 (windows or mac should be fine).
+2. Download this project from github (many other websites can help you with that).
+3. The UnityTestTools are unable in-editor under the UnityTestTools menu bar, where you can see all of the unit and integration tests available.
+4. The build scripts also show how to execute unit tests from a command-line for automated building and validation.
 
 #Where can I find out more about UnityTestTools?
 
