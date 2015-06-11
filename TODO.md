@@ -1,7 +1,10 @@
 
 Current TODO list:
 
-1. get Travis-CI to succeed if only if app builds and all tests pass
+1. make a mac script to rununittests (scripts-osx/rununittests.sh)
+2. Travis-CI runs it and only succeeds if all tests pass
+3. Get command line ready for integration tests
+4. Do steps 1-2 again for integration tests
 2. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
 3. Move integration tests over from other project, get Travis-CI to run and only succeed if integration test passes
 4. Generalize travis-CI build scripts for reuse
