@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-purposefully break build here and on line 17
-
 public class DestroyByContactBehaviour : MonoBehaviour
 {
 	public GameObject explosion;
@@ -14,7 +12,7 @@ public class DestroyByContactBehaviour : MonoBehaviour
 
 	DestroyByContactBehaviour()
 	{
-		this.destroyByContact = new DestroyByContact()
+		this.destroyByContact = new DestroyByContact();
 	}
 
 	void Start()
