@@ -12,11 +12,10 @@ echo "Attempting to build $project for Windows"
   -projectPath "$(pwd)" \
   -buildWindowsPlayer "$(pwd)/Build/$project-win/$project.exe" \
   -quit
-
-[ $? -eq 0 ] || exit $?; # exit for non-zero return code
-
+let result = $?
 echo 'Logs from Windows build'
 cat $(pwd)/unity.log
+[ result -eq 0 ] || exit result; # exit for non-zero return code
 
 echo '=========================================================================='
 echo "Attempting to build $project for OS X"
@@ -28,11 +27,10 @@ echo "Attempting to build $project for OS X"
   -projectPath "$(pwd)" \
   -buildOSXUniversalPlayer "$(pwd)/Build/$project-osx/$project.app" \
   -quit
-
-[ $? -eq 0 ] || exit $?; # exit for non-zero return code
-
+let result = $?
 echo 'Logs from OS X build'
 cat $(pwd)/unity.log
+[ result -eq 0 ] || exit result; # exit for non-zero return code
 
 echo '=========================================================================='
 echo "Attempting to build $project for Linux"
@@ -45,10 +43,10 @@ echo "Attempting to build $project for Linux"
   -buildLinuxUniversalPlayer "$(pwd)/Build/$project-lin/$project" \
   -quit
 
-[ $? -eq 0 ] || exit $?; # exit for non-zero return code
-
+let result = $?
 echo 'Logs from Linux build'
 cat $(pwd)/unity.log
+[ result -eq 0 ] || exit result; # exit for non-zero return code
 
 echo '=========================================================================='
 echo 'Packing the build files to zip files'
