@@ -35,3 +35,4 @@ The goal of this project is to serve as an example of how one can set up git/git
 #What are good resources to learn about unit testing in general?
 
 ["The Art of Unit Testing (Second Edition)"](http://www.amazon.com/The-Art-Unit-Testing-examples/dp/1617290890) is both a good introduction to unit testing, and just happens to use C# as the language of choice and both NUnit and NSubstitute (the unit testing and mocking libraries included in UnityTestTools). Note that while the first edition of the book has much of the same content, it does lean on a different library for mocking (RhinoMocks) which is NOT included in UnityTestTools, making that edition somewhat less useful.
+
