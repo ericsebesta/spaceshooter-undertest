@@ -1,7 +1,6 @@
 
 Current TODO list:
 
-1. Move build scripts from travis-scripts into scripts-osx/travis
 1. get Travis-CI to succeed if only if app builds and all tests pass
 2. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
 3. Move integration tests over from other project, get Travis-CI to run and only succeed if integration test passes
