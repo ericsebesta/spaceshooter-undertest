@@ -20,7 +20,7 @@ The goal of this project is to serve as an example of how one can set up git/git
 
 1. Install Unity 5.0.2 (windows or mac should be fine).
 2. Download this project from github (many other websites can help you with that).
-3. The UnityTestTools are unable in-editor under the UnityTestTools menu bar, where you can see all of the unit and integration tests available.
+3. The UnityTestTools are available in-editor under the UnityTestTools menu bar.
 4. The build scripts also show how to execute unit tests from a command-line for automated building and validation.
 
 #Where can I find out more about UnityTestTools?
