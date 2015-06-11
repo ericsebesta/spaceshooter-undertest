@@ -16,8 +16,8 @@ resultcode = $?
 echo 'Logs from Windows build'
 cat $(pwd)/unity.log
 echo resultcode
-if [ resultcode -eq 0 ]; then
-  exit resultcode; # exit for non-zero return code
+if [ "$resultcode" -eq 0 ]; then
+  exit "$resultcode"; # exit for non-zero return code
 fi
 
 echo '=========================================================================='
@@ -33,8 +33,8 @@ echo "Attempting to build $project for OS X"
 resultcode = $?
 echo 'Logs from OS X build'
 cat $(pwd)/unity.log
-if [ resultcode -eq 0 ]; then
-  exit resultcode; # exit for non-zero return code
+if [ "$resultcode" -eq 0 ]; then
+  exit "$resultcode"; # exit for non-zero return code
 fi
 
 echo '=========================================================================='
@@ -51,8 +51,8 @@ echo "Attempting to build $project for Linux"
 resultcode = $?
 echo 'Logs from Linux build'
 cat $(pwd)/unity.log
-if [ resultcode -eq 0 ]; then
-  exit resultcode; # exit for non-zero return code
+if [ "$resultcode" -eq 0 ]; then
+  exit "$resultcode"; # exit for non-zero return code
 fi
 
 echo '=========================================================================='
