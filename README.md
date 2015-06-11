@@ -1,4 +1,4 @@
-![master-travis](https://travis-ci.org/ericsebesta/spaceshooter-undertest.svg)
+master: [![Build Status](https://travis-ci.org/ericsebesta/spaceshooter-undertest.svg?branch=master)](https://travis-ci.org/ericsebesta/spaceshooter-undertest)
 
 #SpaceShooter Tutorial - Under Test 
 #(THIS IS A WORK IN PROGRESS)
