@@ -13,4 +13,5 @@ echo 'Running unit tests'
 rc=$?
 echo 'Logs from unit tests'
 cat $(pwd)/unity.log
+cat $(pwd)/results.xml
 if [[ $rc != 0 ]]; then exit $rc; fi
