@@ -21,4 +21,4 @@
 sysinfo.txt
 
 # NUnit-generated results
-results.xml
+UnitTestResults.xml

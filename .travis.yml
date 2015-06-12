@@ -3,11 +3,13 @@ osx_image: xcode61
 rvm:
 - 2.1.2
 before_install:
+- chmod +x ./scripts-osx/rununittests.sh
 - chmod +x ./scripts-osx/travis-ci/install.sh
 - chmod +x ./scripts-osx/travis-ci/build.sh
 install:
 - ./scripts-osx/travis-ci/install.sh
 script:
+- ./scripts-osx/rununittests.sh
 - ./scripts-osx/travis-ci/build.sh
 deploy:
   provider: releases

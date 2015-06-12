@@ -1,17 +1,15 @@
 
 Current TODO list:
 
-1. make a mac script to rununittests (scripts-osx/rununittests.sh)
+1. make a mac script to integration tests (scripts-osx/runintegrationtests.sh)
 2. Travis-CI runs it and only succeeds if all tests pass
-3. Get command line ready for integration tests
-4. Do steps 1-2 again for integration tests
-2. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
-3. Move integration tests over from other project, get Travis-CI to run and only succeed if integration test passes
-4. Generalize travis-CI build scripts for reuse
-5. Add many more unit and integration tests
-5. Make travis only build if something changes that "matters" (i.e. definitely don't build if only .md changes)
-6. Make travis only zip files if we want to deploy it
-6. Fix issues with original project (collision doesn't kill player)
+3. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
+4. Move integration tests over from other project, get Travis-CI to run and only succeed if integration test passes
+5. Generalize travis-CI build scripts for reuse
+6. Add many more unit and integration tests
+7. Make travis only build if something changes that "matters" (i.e. definitely don't build if only .md changes)
+8. Make travis only zip files if we want to deploy it
+9. Fix issues with original project (collision doesn't kill player)
 
 Errors that I encountered and dealt with:
 - typo in 1.5.2 test tools
