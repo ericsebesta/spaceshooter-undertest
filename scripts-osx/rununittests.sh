@@ -8,10 +8,9 @@ echo 'Running unit tests'
   -logFile $(pwd)/unity.log \
   -projectPath "$(pwd)" \
   -executeMethod UnityTest.Batch.RunUnitTests \
-  -resultFilePath=results.xml \
   -quit
 rc=$?
 echo 'Logs from unit tests'
 cat $(pwd)/unity.log
-cat $(pwd)/results.xml
+cat $(pwd)/UnitTestResults.xml
 if [[ $rc != 0 ]]; then exit $rc; fi
