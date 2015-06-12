@@ -14,7 +14,7 @@ public class DestroyByContactTest
 
 		var dbc = new DestroyByContact();
 		var c = go.GetComponent<MeshCollider>();
-		Assert.That(dbc.ShouldProcessCollision(c) == true);
+		Assert.That(dbc.ShouldProcessCollision(c) == false);
 		GameObject.DestroyImmediate(go);
 	}
 
