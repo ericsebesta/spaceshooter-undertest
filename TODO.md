@@ -1,6 +1,8 @@
 
 Current TODO list:
 
+1. improve docs to cover getting set up (the troubleshooting below)
+2. add some more tests
 1. make a mac script to integration tests (scripts-osx/runintegrationtests.sh)
 2. Travis-CI runs it and only succeeds if all tests pass
 3. De-"Done-ify" more assets in the project (specifically the main scene, so i can add a test scene next to it)
@@ -10,6 +12,13 @@ Current TODO list:
 7. Make travis only build if something changes that "matters" (i.e. definitely don't build if only .md changes)
 8. Make travis only zip files if we want to deploy it
 9. Fix issues with original project (collision doesn't kill player)
+
+Lower priority:
+
+- make unit test results easier to find / in an html report that's viewable from github
+- investigate another CI system like appveyor (travisci for windows)
+- investigate getting code coverage tool integrated (it's tough because unity doesn't use an sln)
+   - or can it?
 
 Errors that I encountered and dealt with:
 - typo in 1.5.2 test tools
