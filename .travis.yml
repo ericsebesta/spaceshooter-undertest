@@ -8,6 +8,7 @@ before_install:
 install:
 - ./scripts-osx/travis-ci/install.sh
 script:
+- ./scripts-osx/rununittests.sh
 - ./scripts-osx/travis-ci/build.sh
 deploy:
   provider: releases
