@@ -1,7 +1,7 @@
 
 Current TODO list:
 
-1. improve docs to cover getting set up (the troubleshooting below)
+
 2. add some more tests
 1. make a mac script to integration tests (scripts-osx/runintegrationtests.sh)
 2. Travis-CI runs it and only succeeds if all tests pass
@@ -19,8 +19,13 @@ Lower priority:
 - investigate another CI system like appveyor (travisci for windows)
 - investigate getting code coverage tool integrated (it's tough because unity doesn't use an sln)
    - or can it?
+Get basic integration test with spawnable player
+move player ship prefab into Resources/Prefabs
+THEN you should be able to address it with "Prefabs/Player"
+@see http://docs.unity3d.com/Manual/LoadingResourcesatRuntime.html
 
 Errors that I encountered and dealt with:
+
 - typo in 1.5.2 test tools
   - fix [here](https://github.com/ericsebesta/spaceshooter-undertest/commit/c47ed92ce20fe7cbb8f8840fee1a7cbce1120f78)
 - git default .gitignore can ignore .dll files. 
