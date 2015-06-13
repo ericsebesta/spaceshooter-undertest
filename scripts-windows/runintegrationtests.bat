@@ -1,15 +1,14 @@
 REM This script must be run from the base unity project directory.
 REM It presumes a default-install location for unity.
-REM It will 0 on success, else non-0.
-REM It outputs a UnitTestResults.xml file in the base unity project directory.
+REM Rather than passing in scene names, depend on default (all scenes that start with Test[s])
 
-echo Running unit tests
-@echo off
+echo Running integration tests
 "c:\Program Files\Unity\Editor\Unity.exe" ^
   -batchmode ^
   -nographics ^
   -silent-crashes ^
   -logFile $(pwd)/unity.log ^
   -projectPath %cd% ^
-  -executeMethod UnityTest.Batch.RunUnitTests ^
+  -executeMethod UnityTest.Batch.RunIntegrationTests ^
+  -resultsFileDirectory=%cd% ^
   -quit
